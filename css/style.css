@@ -1,0 +1,506 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color:  hsl(201, 11%, 66%);  /*all text*/
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: #fff;
+}
+
+
+/* --------------- my frame work ---------------- */
+a{
+    text-decoration: none;
+    color: hsl(201, 11%, 66%);
+}
+
+.header1{
+    color:  hsl(210, 10%, 33%);  /* headers*/
+    font: bold 22px 'Bai Jamjuree', sans-serif;
+    margin-bottom: 15px;
+}
+
+.header2{
+    color:  hsl(210, 10%, 33%);  /* headers*/
+    font: bold 20px 'Bai Jamjuree', sans-serif;
+    margin-bottom: 15px;
+}
+
+.my-par{
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.repeat{
+    /* border: 1px solid #ccc; */
+    margin: 30px 0;
+}
+
+.repeat2{
+    /* border: 1px solid #ccc; */
+    margin: 60px 0; 
+}
+
+.container{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.anchor{
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+.first-anchor{
+    background-color: hsl(171, 66%, 44%);
+}
+
+.first-anchor:hover{
+    background-color: rgba(48, 172, 153, 0.6);
+    
+}
+
+.first-anchor:active{
+    background-color: hsla(171, 66%, 44%, .6);
+
+}
+
+.second-anchor{
+    background-color: hsl(233, 100%, 69%);
+}
+
+.second-anchor:hover{
+    background-color: hsla(233, 100%, 69%, .7);
+}
+
+.second-anchor:active{
+    background-color: hsla(233, 100%, 69%, .7);
+}
+/*---------- end of frame work -----------------*/
+
+
+
+
+
+/* ------------- header styling -------------- */
+/* logo div */
+header{
+    background: url('../images/bg-header-mobile.png') no-repeat;
+    background-size: 100% 90%;
+}
+
+header .container div:first-of-type{
+    padding-top: 90px;
+    text-align: center;
+}
+
+header .logo {
+    transform: scale(.8);
+}
+
+header .download{
+    margin-bottom: 70px;
+}
+/* ------------- section2 styling -------------- */
+
+.section2{
+    margin: 80px 0 150px 0;
+}
+.section2 .container > div:first-of-type img,
+.section4 .container  img {
+    width: 100%;
+}
+
+.section2 .container > div:nth-of-type(2){
+    margin-top: 60px;
+}
+
+/* ------------- section4 styling -------------- */
+.section4 .container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.section4 .container  img {
+    width: 100%;
+}
+
+/* ------------- section6 styling -------------- */
+.section6 .container{
+    margin-top:120px;
+}
+
+.section6 .container div img {
+    margin-bottom: 20px;
+}
+
+/* ------------- section7 styling -------------- */
+.section7{
+    margin: 125px 0;
+}
+.section7 .container div {
+    margin-bottom: 40px;
+}
+
+.section7 .container div img{
+    transform: scale(.78);
+}
+
+/* ------------- section8 styling -------------- */
+.section8{
+    margin-bottom: 125px;
+}
+
+
+/* ------------- footer styling -------------- */
+
+footer{
+    background-color: hsl(201, 11%, 66%);
+    background-color: #f3f3f3;
+}
+
+footer .container{
+    padding: 30px 0;
+} 
+
+footer .container div:first-child img{
+    width: 45px;
+    height: 45px;
+}
+footer .container > div:first-child {
+    margin-bottom: 40px;
+}
+
+footer a {
+    display: block;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 20px;
+}
+
+footer a:hover, footer a:active {
+    color: hsl(171, 66%, 44%);
+}
+
+footer .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+footer .social-media ul li {
+    display: inline-block;
+    padding: 0 20px;
+    transform: scale(1.6);  
+}
+
+footer .social-media .fb:hover,
+footer .social-media .fb:active {
+   color: #3b5998; 
+}
+footer .social-media .tw:hover,
+footer .social-media .tw:active {
+    color: #00acee;   
+}
+footer .social-media .insta:hover,
+footer .social-media .insta:active {
+    color: #dd2a7b; 
+}
+
+
+@media (min-width:440px) and (max-width:767px){
+
+    /* ------------- section2 styling -------------- */
+    .section2 div:first-of-type img {
+        width: 80%;
+    }
+
+    /* ------------- section4 styling -------------- */
+    .section4 .container img {
+        transform: scale(.80);
+
+    }
+    /* ------------- footer styling -------------- */
+    footer .links {
+        white-space: nowrap;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+    /* ------------- header styling -------------- */
+    header{
+        background: url('../images/bg-header-desktop.png') no-repeat;
+    }
+
+    /* ------------- section2 styling -------------- */
+
+    .header1{
+        font: bold 26px 'Bai Jamjuree', sans-serif;
+    }
+    .header2{
+        font: bold 18px 'Bai Jamjuree', sans-serif;
+    }
+    /* overriding myframe properties  */
+    .section2 .container{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .section2 .container > div:nth-of-type(2){
+        margin-top: 0;
+    }
+
+    .section2 .header2 {
+        margin-bottom: 5px;
+        font: bold 18px 'Bai Jamjuree', sans-serif;
+
+    }
+    .section2 .repeat {
+        margin: 20px;
+    }
+    .section2 .my-par{
+        width: 80%;
+        font: 400 14px 'Bai Jamjuree', sans-serif;
+    }
+
+    /* new stylings */
+    .section2 .container > div:first-of-type img{
+        position: relative;
+        left: -60px;
+    }
+    .section2 .my-par{
+        width: 80%;
+    }
+
+    /* ------------- section4 styling -------------- */
+    .section4 .container img {
+        transform: scale(.83);
+
+    }
+
+    /* ------------- section6 styling -------------- */
+    .section6{
+        margin-top:60px;
+    }
+
+    .section6 .container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+    .section6 h2{
+        white-space: nowrap;
+
+    }
+
+    .section6 .container > div {
+        padding: 0 30px;
+    }
+
+    .section6 .container > div p{
+        font: 400 14px 'Bai Jamjuree', sans-serif;
+
+    }
+    
+    /* ------------- section7 styling -------------- */
+    .section7{
+        margin-top:60px;
+    }
+    
+    .section7 .container{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .section7 .container > div {
+        margin-bottom: 0px;
+
+    }
+
+    .section7 .container div img{
+        transform: scale(.7);
+    }
+
+    /* ------------- footer styling -------------- */
+    footer .container {
+        /* border: 1px solid #000; */
+        width: 90%;
+        white-space: nowrap;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    footer .container div:first-child {
+        margin-bottom: 0;
+    }
+    footer .container div:first-child img {
+        width: 50px;
+        height: 50px;
+        margin-top: 27px;
+    }
+
+    footer .links {
+        padding-top: 20px;
+        columns: 3;
+    }
+    footer .links div{
+        margin-right: 25px;
+    }
+    
+    footer .social-media ul li {
+        padding: 0 10px;
+    }
+    
+
+}
+    
+@media (min-width:993px){
+
+    /* ------------- header styling -------------- */
+    header{
+        background: url('../images/bg-header-desktop.png') no-repeat;
+    }
+
+    /* ------------- section2 styling -------------- */
+
+    .header1{
+        font: bold 26px 'Bai Jamjuree', sans-serif;
+    }
+
+    .header2{
+        font: bold 22px 'Bai Jamjuree', sans-serif;
+    }
+
+    /* overriding myframe properties  */
+    .section2 .container{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .section2 .container > div:nth-of-type(2){
+        margin-top: 0;
+    }
+
+    .section2 .header2 {
+        margin-bottom: 5px;
+        font: bold 18px 'Bai Jamjuree', sans-serif;
+
+    }
+    .section2 .repeat {
+        margin: 20px;
+
+    }
+    .section2 .my-par{
+        width: 80%;
+        font: 400 14px 'Bai Jamjuree', sans-serif;
+    }
+    /* new stylings */
+    .section2 .container > div:first-of-type img{
+        position: relative;
+        left: -60px;
+    }
+
+    
+    /* ------------- section4 styling -------------- */
+    .section4 .container img {
+        transform: scale(.85);
+    }
+
+    /* ------------- section6 styling -------------- */
+     .section6 .container{
+        width: 90%;
+        margin-top:60px;
+        display: flex;
+        flex-direction: row;
+    }
+    .section6 h2{
+        white-space: nowrap;
+
+    }
+
+    .section6 .container > div {
+        padding: 0 30px;
+    }
+
+    .section6 .container > div p{
+        font: 400 14px 'Bai Jamjuree', sans-serif;
+
+    }
+
+    /* ------------- section7 styling -------------- */
+      .section7{
+        margin-top:60px;
+    }
+    
+    .section7 .container{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .section7 .container > div {
+        margin-bottom: 0px;
+
+    }
+
+    .section7 .container div img{
+        transform: scale(.7);
+    }
+
+    /* ------------- footer styling -------------- */
+    footer .container {
+        /* border: 1px solid #000; */
+        width: 90%;
+        white-space: nowrap;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+    footer .container div:first-child {
+        margin-bottom: 0;
+    }
+    footer .container div:first-child img {
+        width: 60px;
+        height: 60px;
+        margin-top: 22px;
+    }
+
+
+    footer .links {
+        padding-top: 20px;
+        columns: 3;
+    }
+    footer .links div{
+        margin-right: 25px;
+    }
+
+    
+    footer .social-media ul li {
+        padding: 0 10px;
+    }
+    
+}
